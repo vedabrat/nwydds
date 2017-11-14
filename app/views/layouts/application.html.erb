@@ -9,21 +9,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <ul class="nav nav-tabs">
-     <%= image_tag("cover.jpg", :alt => "cover") %>
-     <li><%= link_to "Home", welcome_home_path %></li>
-     <li><%= link_to "Gallery", welcome_gallery_path %></li>
-     <li><%= link_to "News", welcome_news_path %></li>
-     <li><%= link_to "Classes", welcome_classes_path %></li>
-     <li><%= link_to "Fees", welcome_fees_path %></li>
-     <li><%= link_to "Schedule", welcome_schedule_path %></li>
-     <li><%= link_to "Registration", welcome_registration_path %></li>
-     <li><%= link_to "About Us", welcome_about_path %></li>
-     <li><%= link_to "Contact Us", welcome_contact_path %></li>
+  <!-- <div class="container"> -->
+    <!-- <ul class="nav nav-tabs"> -->
+     <!-- <%= image_tag("cover.jpg", :alt => "cover") %> -->
+     <!-- <li> -->
+       <%= link_to "Home", welcome_home_path %>
+     <!-- </li> -->
+     <!-- <li><%= link_to "Gallery", welcome_gallery_path %></li> -->
+     <!-- <li> -->
+     <%= link_to "About Yashs", welcome_about_path %>
+     <%= link_to "Registration", welcome_registration_path %>
+       <%= link_to "Events", welcome_news_path %>
+     <!-- </li> -->
+     <!-- <li><%= link_to "Classes", welcome_classes_path %></li> -->
+     <!-- <li><%= link_to "Fees", welcome_fees_path %></li> -->
+     <!-- <li><%= link_to "Schedule", welcome_schedule_path %></li> -->
+     <!-- <li> -->
+     <!-- </li>
+     <li> -->
+     <!-- </li>
+     <li> -->
+       <%= link_to "Contact Us", welcome_contact_path %>
+     <!-- </li> -->
 
-   </ul>
- </div>
+   <!-- </ul> -->
+ <!-- </div> -->
 <%= yield %>
 
 </body>

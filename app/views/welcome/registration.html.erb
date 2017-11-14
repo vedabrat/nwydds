@@ -1,30 +1,33 @@
-<h1>Welcome#registration</h1>
+<!-- <h1>Welcome#registration</h1> -->
 <!-- <p>Find me in app/views/welcome/registration.html.erb</p> -->
 <form action="https://getsimpleform.com/messages?form_api_token=1702c7ddd79f7beac9172aa44ba5b6b3"
     method="post">
     <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
     <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>'/> -->
-    <p style="margin-bottom: 0in; line-height: 100%">
-      <span style="text-decoration: none">Name
-        <input type='text' name='Name' />
+    <p class="register" style="margin-bottom: 0in; line-height: 100%">
+      <span style="text-decoration: none">Parent Name<br>First
+        <input type='text' name='Parent First Name' /><br>Last
+        <input type='text' name='Parent First Name' />
       </span>
     </p>
-    <p style="margin-bottom: 0in; line-height: 100%">
-      <span style="text-decoration: none">Age
-        <input type='text' name='Age' />
+    <p class="register" style="margin-bottom: 0in; line-height: 100%">
+      <span style="text-decoration: none">Email
+        <input type='text' name='Email' />
       </span>
     </p>
-    <p style="margin-bottom: 0in; line-height: 100%">
-      <span style="text-decoration: none">Address
-        <input type='text' name='Address' />
+    <p class="register" style="margin-bottom: 0in; line-height: 100%">
+      <span style="text-decoration: none">Phone Number
+        <input type='text' name='PhoneNum' />
       </span>
     </p>
-    <p style="margin-bottom: 0in; line-height: 100%">
-      <br/>Parent's number
-      <input type='text' name='Phone#' />
+    <p class="register" style="margin-bottom: 0in; line-height: 100%">
+      <span style="text-decoration: none">Age of student
+        <input type='text' name='StudentAge' />
+      </span>
     </p>
-    <p style="margin-bottom: 0in; line-height: 100%">
-      <input type='submit' value='Submit!' /> </form>
+    <p class="register" style="margin-bottom: 0in; line-height: 100%">
+      <input type='submit' value='Submit' /> </form>
 
-<a href="studio_policy_and_procedures.pdf">Studio Policy and Procedures</a><br>
-<a href="waiver_and_release_from_liability_form.pdf">Waiver and Release from Liability Form</a><br><br><br><br><br><br>
+      <%= image_tag("registration.jpg", :alt => "profile") %>
+<!-- <a href="studio_policy_and_procedures.pdf">Studio Policy and Procedures</a><br> -->
+<!-- <a href="waiver_and_release_from_liability_form.pdf">Waiver and Release from Liability Form</a><br><br><br><br><br><br> -->
